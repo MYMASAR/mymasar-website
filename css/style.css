@@ -1,3 +1,51 @@
+:root{
+
+    --primary:#0B2E59;
+    --gold:#C89B3C;
+    --light:#F8F9FA;
+    --dark:#1F2937;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+
+}
+
+.navbar{
+
+    background:white;
+
+}
+
+.nav-link{
+
+    font-weight:600;
+    color:#333 !important;
+    margin-left:20px;
+
+}
+
+.nav-link:hover{
+
+    color:var(--gold)!important;
+
+}
+
+.btn-warning{
+
+    background:var(--gold);
+    border:none;
+
+}
+
+.btn-warning:hover{
+
+    background:#b98b25;
+
+}
+
 /* ==========================
    MYMASAR WEBSITE
 ========================== */
@@ -17,51 +65,7 @@ body{
 
 /* Navigation */
 
-header{
-    width:100%;
-    background:white;
-    border-bottom:1px solid #eee;
-    position:fixed;
-    top:0;
-    z-index:1000;
-}
 
-nav{
-    max-width:1200px;
-    margin:auto;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:15px 40px;
-}
-
-.logo img{
-    height:50px;
-    width:auto;
-    display:block;
-}
-
-.logo{
-    display:flex;
-    align-items:center;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-    gap:35px;
-}
-
-nav a{
-    text-decoration:none;
-    color:#333;
-    font-weight:600;
-    transition:.3s;
-}
-
-nav a:hover{
-    color:#C89B3C;
-}
 
 /* ==========================
    HERO
