@@ -32,13 +32,18 @@ nav{
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:20px;
+    padding:15px 40px;
 }
 
 .logo img{
-    height:60px;
+    height:32px;
     width:auto;
     display:block;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
 }
 
 nav ul{
@@ -102,23 +107,32 @@ nav a:hover{
 
 /* Mobile */
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-nav{
-    flex-direction:column;
+    nav{
+        flex-direction:column;
+        padding:15px 20px;
+    }
+
+    .logo img{
+    height:42px;
+    width:auto;
+    display:block;
 }
 
-nav ul{
-    margin-top:15px;
-    gap:20px;
-}
+    nav ul{
+        margin-top:10px;
+        gap:20px;
+        flex-wrap:wrap;
+        justify-content:center;
+    }
 
-.hero h1{
-    font-size:42px;
-}
+    .hero h1{
+        font-size:42px;
+    }
 
-.hero p{
-    font-size:20px;
-}
+    .hero p{
+        font-size:20px;
+    }
 
 }
