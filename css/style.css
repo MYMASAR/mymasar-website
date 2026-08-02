@@ -1,1 +1,611 @@
-:root{--primary:#0B2E59;--secondary:#123F73;--gold:#C89B3C}body{font-family:'Inter',sans-serif}.hero{background:linear-gradient(135deg,var(--primary),var(--secondary));padding:160px 0 110px}.eyebrow{color:var(--gold);font-weight:700;text-transform:uppercase}.hero h1{color:#fff;font-size:3.5rem;font-weight:800;margin:20px 0}.hero p{color:#ddd;max-width:560px}.btn-warning{background:var(--gold);border:none}.founder{max-width:390px;border-radius:20px;box-shadow:0 20px 50px rgba(0,0,0,.3)}.trust h2{color:var(--primary);font-weight:800}.trust p{color:#666}@media(max-width:991px){.hero{text-align:center;padding-top:130px}.hero p{margin:auto}}
+/* ===================================================
+   MYMASAR LLC
+   VERSION 3
+=================================================== */
+
+:root{
+
+    --primary:#0B2E59;
+    --secondary:#123F73;
+    --gold:#C89B3C;
+    --gold-dark:#B98B25;
+    --light:#F8F9FA;
+    --dark:#1F2937;
+    --text:#6B7280;
+
+}
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    font-family:'Inter',sans-serif;
+    color:var(--dark);
+    background:var(--light);
+    line-height:1.7;
+
+}
+
+/* =====================================
+   NAVBAR
+===================================== */
+
+.navbar{
+
+    padding:18px 0;
+
+}
+
+.navbar-brand img{
+
+    height:48px;
+
+}
+
+.nav-link{
+
+    color:var(--dark)!important;
+    font-weight:600;
+    margin-left:18px;
+    transition:.3s;
+
+}
+
+.nav-link:hover{
+
+    color:var(--gold)!important;
+
+}
+
+.btn-warning{
+
+    background:var(--gold);
+    border:none;
+    color:white;
+    font-weight:600;
+
+}
+
+.btn-warning:hover{
+
+    background:var(--gold-dark);
+    color:white;
+
+}
+
+/* =====================================
+   HERO
+===================================== */
+
+.hero{
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    );
+
+    padding-top:170px;
+    padding-bottom:120px;
+
+}
+
+.eyebrow{
+
+    display:inline-block;
+
+    color:var(--gold);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    color:white;
+
+    font-size:60px;
+
+    line-height:1.1;
+
+    font-weight:800;
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    color:#d9d9d9;
+
+    font-size:20px;
+
+    max-width:560px;
+
+    margin-bottom:40px;
+
+}
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn-outline-light{
+
+    border:2px solid white;
+
+}
+
+.btn-outline-light:hover{
+
+    background:white;
+    color:var(--primary);
+
+}
+
+/* =====================================
+   HERO PHOTO
+===================================== */
+
+.hero-photo{
+
+    width:390px;
+    max-width:100%;
+    border-radius:24px;
+    box-shadow:0 25px 60px rgba(0,0,0,.35);
+
+}
+
+.founder-box{
+
+    margin-top:25px;
+
+}
+
+.founder-box h4{
+
+    color:white;
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+.founder-box p{
+
+    color:#d7d7d7;
+
+    margin-top:10px;
+
+    font-size:16px;
+
+}
+
+/* =====================================
+   TRUST BAR
+===================================== */
+
+.trust-bar{
+
+    background:white;
+
+    padding:70px 0;
+
+}
+
+.trust-bar h2{
+
+    color:var(--primary);
+
+    font-size:40px;
+
+    font-weight:800;
+
+    margin-bottom:10px;
+
+}
+
+.trust-bar p{
+
+    color:var(--text);
+
+    margin:0;
+
+}
+
+/* =====================================
+   SECTION TITLES
+===================================== */
+
+.section-title{
+
+    text-align:center;
+    margin-bottom:60px;
+
+}
+
+.section-title span,
+.section-label{
+
+    color:var(--gold);
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+
+}
+
+.section-title h2,
+.about-section h2,
+.contact-section h2{
+
+    margin-top:15px;
+
+    font-size:42px;
+
+    font-weight:800;
+
+    color:var(--dark);
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:20px auto 0;
+
+    color:var(--text);
+
+}
+
+/* =====================================
+   SERVICES
+===================================== */
+
+.services{
+
+    padding:100px 0;
+
+    background:#F8F9FA;
+
+}
+
+.service-card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:40px;
+
+    height:100%;
+
+    transition:.35s;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+
+}
+
+.service-icon{
+
+    font-size:48px;
+
+    margin-bottom:20px;
+
+}
+
+.service-card h3{
+
+    font-size:26px;
+
+    margin-bottom:18px;
+
+    font-weight:700;
+
+}
+
+.service-card p{
+
+    color:var(--text);
+
+}
+
+/* =====================================
+   INDUSTRIES
+===================================== */
+
+.industries{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.industry-box{
+
+    background:#F8F9FA;
+
+    border-radius:18px;
+
+    padding:35px 15px;
+
+    transition:.3s;
+
+    font-size:40px;
+
+}
+
+.industry-box:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:translateY(-6px);
+
+}
+
+.industry-box h5{
+
+    margin-top:18px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+}
+
+/* =====================================
+   ABOUT
+===================================== */
+
+.about-section{
+
+    padding:100px 0;
+
+    background:#F8F9FA;
+
+}
+
+.about-photo{
+
+    width:100%;
+
+    max-width:420px;
+
+    border-radius:22px;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+
+}
+
+.about-section p{
+
+    color:var(--text);
+
+    margin-top:20px;
+
+}
+
+/* =====================================
+   CONTACT
+===================================== */
+
+.contact-section{
+
+    padding:100px 0;
+
+    background:white;
+
+}
+
+.contact-card{
+
+    background:#F8F9FA;
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    height:100%;
+
+    transition:.3s;
+
+}
+
+.contact-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.contact-card h4{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+    font-weight:700;
+
+}
+
+.contact-card p{
+
+    margin:0;
+
+    color:var(--text);
+
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+.footer{
+
+    background:var(--primary);
+
+    color:white;
+
+    padding:35px 0;
+
+}
+
+.footer p{
+
+    margin:0;
+
+    color:#d7d7d7;
+
+}
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media(max-width:991px){
+
+.hero{
+
+    text-align:center;
+
+    padding-top:140px;
+
+}
+
+.hero p{
+
+    margin-left:auto;
+
+    margin-right:auto;
+
+}
+
+.hero-buttons{
+
+    justify-content:center;
+
+}
+
+.hero-photo{
+
+    margin-top:60px;
+
+}
+
+.hero h1{
+
+    font-size:46px;
+
+}
+
+.section-title h2,
+.about-section h2,
+.contact-section h2{
+
+    font-size:34px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero h1{
+
+    font-size:38px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+}
+
+.hero-buttons{
+
+    flex-direction:column;
+
+}
+
+.hero-buttons a{
+
+    width:100%;
+
+}
+
+.nav-link{
+
+    margin-left:0;
+
+    text-align:center;
+
+}
+
+.btn-warning{
+
+    margin-top:15px;
+
+}
+
+.footer{
+
+    text-align:center;
+
+}
+
+.footer .text-md-end{
+
+    text-align:center !important;
+
+    margin-top:20px;
+
+}
+
+}

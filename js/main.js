@@ -1,1 +1,3 @@
-console.log('MYMASAR v3');
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("MYMASAR Website v3 Loaded");
+});
