@@ -191,6 +191,10 @@ body{
 
 }
 
+/* ==========================
+   FOUNDER CARD
+========================== */
+
 .founder-card{
 
     text-align:center;
@@ -200,16 +204,17 @@ body{
 .founder-card h5{
 
     color:white;
-    margin-top:20px;
+    font-size:22px;
     font-weight:700;
-
+    margin-top:20px;
+    
 }
 
 .founder-card p{
-
+    
     color:#d7d7d7;
-    margin-top:8px;
-
+    font-size:15px;
+    line-height:1.5;
 }
 
 /* ==========================
@@ -219,21 +224,20 @@ body{
 .trust-bar{
 
     background:white;
-    padding:50px 20px;
-
+    width:100%;
+    padding:60px 0;
 }
 
 .trust-grid{
 
     max-width:1200px;
-    margin:auto;
+    margin:0 auto;
+    padding:0 20px;
 
     display:grid;
 
     grid-template-columns:repeat(4,1fr);
-
-    gap:30px;
-
+    gap:40px;
 }
 
 .trust-item{
