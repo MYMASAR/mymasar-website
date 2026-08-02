@@ -212,3 +212,63 @@ body{
     margin-top:8px;
 
 }
+
+/* ==========================
+   TRUST BAR
+========================== */
+
+.trust-bar{
+
+    background:white;
+    padding:50px 20px;
+
+}
+
+.trust-grid{
+
+    max-width:1200px;
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:30px;
+
+}
+
+.trust-item{
+
+    text-align:center;
+
+}
+
+.trust-item h2{
+
+    color:#0B2E59;
+
+    font-size:34px;
+
+    font-weight:700;
+
+}
+
+.trust-item p{
+
+    color:#777;
+
+    margin-top:10px;
+
+    font-size:16px;
+
+}
+
+@media (max-width:768px){
+
+.trust-grid{
+
+grid-template-columns:1fr 1fr;
+
+}
+
+}
