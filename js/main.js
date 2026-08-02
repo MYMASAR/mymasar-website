@@ -1,0 +1,1 @@
+console.log('MYMASAR v3');
